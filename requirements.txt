@@ -1,0 +1,8 @@
+# Course Dependencies
+# Install with: pip install -r requirements.txt
+
+# Testing
+pytest>=7.4.0
+
+# No other dependencies needed - this course focuses on standard library!
+
