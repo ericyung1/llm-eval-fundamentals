@@ -60,3 +60,6 @@ htmlcov/
 # But keep the workspace directory itself
 !workspace/.gitkeep
 
+
+# Lesson workspace (practice files)
+workspace/

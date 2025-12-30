@@ -76,9 +76,17 @@ def check_commit_count(repo_path: Path, min_commits: int = 3) -> bool:
 
 def check_first_commit_message(repo_path: Path) -> bool:
     """Check if the first commit message contains 'initial' or 'Initial'."""
-    # Get the first commit (oldest)
+    # Get the first commit (oldest) - use rev-list to get oldest commit hash first
+    success, first_commit = run_git_command(
+        repo_path, "rev-list", "--max-parents=0", "HEAD"
+    )
+    if not success:
+        print("  ❌ Could not find first commit")
+        return False
+    
+    # Get the message of that commit
     success, output = run_git_command(
-        repo_path, "log", "--reverse", "--format=%s", "-1"
+        repo_path, "log", "--format=%s", "-1", first_commit.strip()
     )
     
     if not success:
