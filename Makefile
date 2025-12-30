@@ -84,10 +84,10 @@ check:
 		echo "🔍 Running checkpoint for Lesson $$LESSON_NUM..."; \
 		echo ""; \
 		if [ -f "$$CHECK_SCRIPT" ]; then \
-			$(PYTHON) "$$CHECK_SCRIPT" && echo "" && echo "✅ Checkpoint $$LESSON_NUM PASSED!" || echo "" && echo "❌ Checkpoint $$LESSON_NUM FAILED. Keep working!"; \
+			$(PYTHON) "$$CHECK_SCRIPT" && (echo "" && echo "✅ Checkpoint $$LESSON_NUM PASSED!") || (echo "" && echo "❌ Checkpoint $$LESSON_NUM FAILED. Keep working!"); \
 		elif [ -f "$$TEST_FILE" ]; then \
 			if [ -d "$(VENV)" ]; then \
-				$(PYTEST) "$$TEST_FILE" -v && echo "" && echo "✅ Checkpoint $$LESSON_NUM PASSED!" || (echo "" && echo "❌ Checkpoint $$LESSON_NUM FAILED. Keep working!"); \
+				$(PYTEST) "$$TEST_FILE" -v && (echo "" && echo "✅ Checkpoint $$LESSON_NUM PASSED!") || (echo "" && echo "❌ Checkpoint $$LESSON_NUM FAILED. Keep working!"); \
 			else \
 				echo "❌ Virtual environment not found. Run 'make setup' first."; \
 				exit 1; \
