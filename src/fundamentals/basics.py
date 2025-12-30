@@ -17,8 +17,7 @@ def add_numbers(a: int, b: int) -> int:
     Returns:
         The sum of a and b
     """
-    # TODO: Implement this function
-    pass
+    return a + b
 
 
 def multiply_numbers(a: int, b: int) -> int:
@@ -32,8 +31,7 @@ def multiply_numbers(a: int, b: int) -> int:
     Returns:
         The product of a and b
     """
-    # TODO: Implement this function
-    pass
+    return a * b
 
 
 def is_even(n: int) -> bool:
@@ -46,9 +44,7 @@ def is_even(n: int) -> bool:
     Returns:
         True if n is even, False otherwise
     """
-    # TODO: Implement this function
-    # Hint: Use the modulo operator (%)
-    pass
+    return n % 2 == 0
 
 
 def reverse_string(s: str) -> str:
@@ -64,9 +60,7 @@ def reverse_string(s: str) -> str:
     Example:
         reverse_string("hello") -> "olleh"
     """
-    # TODO: Implement this function
-    # Hint: Use string slicing with [::-1]
-    pass
+    return s[::-1]
 
 
 def count_vowels(s: str) -> int:
@@ -84,9 +78,11 @@ def count_vowels(s: str) -> int:
     Example:
         count_vowels("hello") -> 2
     """
-    # TODO: Implement this function
-    # Hint: Loop through each character and check if it's in "aeiouAEIOU"
-    pass
+    count = 0
+    for char in s:
+        if char.lower() in "aeiou":
+            count += 1
+    return count
 
 
 def fizzbuzz(n: int) -> str:
@@ -111,9 +107,14 @@ def fizzbuzz(n: int) -> str:
         fizzbuzz(15) -> "FizzBuzz"
         fizzbuzz(7)  -> "7"
     """
-    # TODO: Implement this function
-    # Hint: Check divisibility by both 3 and 5 first!
-    pass
+    if n % 3 == 0 and n % 5 == 0:
+        return "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz"
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return str(n)
 
 
 def main():

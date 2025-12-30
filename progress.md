@@ -7,26 +7,26 @@
 ## Module 1: Developer Environment
 
 ### Lesson 1: Terminal & Filesystem Basics
-- [ ] Read the lesson (`make lesson 1`)
-- [ ] Completed all terminal exercises
-- [ ] Created required folder structure
-- [ ] Checkpoint passed (`make check 1`)
+- [x] Read the lesson (`make lesson 1`)
+- [x] Completed all terminal exercises
+- [x] Created required folder structure
+- [x] Checkpoint passed (`make check 1`)
 
 ### Lesson 2: Git Basics
-- [ ] Read the lesson (`make lesson 2`)
-- [ ] Initialized a git repository
-- [ ] Made at least 2 commits
-- [ ] Checkpoint passed (`make check 2`)
+- [x] Read the lesson (`make lesson 2`)
+- [x] Initialized a git repository
+- [x] Made at least 2 commits
+- [x] Checkpoint passed (`make check 2`)
 
 ---
 
 ## Module 2: Python Fundamentals
 
 ### Lesson 3: Python Basics
-- [ ] Read the lesson (`make lesson 3`)
-- [ ] Completed all function implementations
-- [ ] Understood imports and modules
-- [ ] Checkpoint passed (`make check 3`)
+- [x] Read the lesson (`make lesson 3`)
+- [x] Completed all function implementations
+- [x] Understood imports and modules
+- [x] Checkpoint passed (`make check 3`)
 
 ### Lesson 4: Data Formats
 - [ ] Read the lesson (`make lesson 4`)
@@ -96,9 +96,9 @@
 
 | Metric | Value |
 |--------|-------|
-| Lessons Completed | 0 / 10 |
-| Checkpoints Passed | 0 / 10 |
-| Estimated Time Spent | 0 hours |
+| Lessons Completed | 2 / 10 |
+| Checkpoints Passed | 2 / 10 |
+| Estimated Time Spent | ~4 hours |
 
 ---
 
